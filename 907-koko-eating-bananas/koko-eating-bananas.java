@@ -4,7 +4,7 @@ class Solution {
         long hour=0;
         for(int i=0;i<piles.length;i++)
         {
-            hour+=((long)piles[i]+k-1)/k;
+            hour+=(long) Math.ceil((double) piles[i] / k);
         }
         if(hour<=h)
         {
